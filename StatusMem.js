@@ -1,5 +1,6 @@
 const os = require('os')
-
+const { json } = require('stream/consumers')
+const log = require ('./logger')
 setInterval(() => {
 
 const { freemem, totalmem} = os
@@ -16,6 +17,8 @@ const status = {
 console.clear()
 console.log("== Status do Memória ==")
 console.table(status)
+
+log(`${JSON.stringify(status)}\n`);
 
 
 }, 1000)

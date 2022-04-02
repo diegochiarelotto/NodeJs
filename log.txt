@@ -1,0 +1,5 @@
+{"Livre":"5589 MB","Total":"16263 MB","Usando":"34 %"}
+{"Livre":"5581 MB","Total":"16263 MB","Usando":"34 %"}
+{"Livre":"5583 MB","Total":"16263 MB","Usando":"34 %"}
+{"Livre":"5536 MB","Total":"16263 MB","Usando":"34 %"}
+{"Livre":"5556 MB","Total":"16263 MB","Usando":"34 %"}
