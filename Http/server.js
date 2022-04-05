@@ -13,12 +13,7 @@ http.createServer((req, res) => {
     const allowed = allowedFileTypes.find(item => item == extname) //ret True ou False
 
       if(!allowed) return    
-
-    
-    //if(req.url === '/') //Home Page
-    //return res.end('<h1>Pagina Principal</h1>')
-        fs.readFile(
-       // path.join(__dirname, 'Public', 'index.html'),
+         fs.readFile(
          filePath,
          (err, content) => {
           if(err) throw err
@@ -26,7 +21,4 @@ http.createServer((req, res) => {
           res.end(content)
           }
         )
-
-   // if(req.url === '/contato') // Pg Contato
-   // return res.end('<h1>Contato</h1>')
-}). listen(8000, console.log("Sv-Rodando"));
+}).listen(8000, console.log('Sv-Rodando'));

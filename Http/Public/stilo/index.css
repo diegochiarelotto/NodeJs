@@ -11,33 +11,31 @@
     --Sombra:   #0c0c0cb7;
     --Smenu:    #4242423f;
     --Escrita:  white;
+    --fonte1 : Arial, Helvetica, sans-serif;
+}   
 
-}               
 *{
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--Fundo);
-    color: var(--Escrita);
-}
 .logo_dc{
     width: 156px;
     height: 50px;
-}
-.header, .nav_header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.header {
-    background-color: var(--Fundo02);
+
+}.menu {
+    font-family: var(--fonte1);
+    background-color: var(--Fundo);
+    color: var(--Escrita);
     box-shadow: 1px 1px 6px var(--Sombra);
     height: 90px;
     justify-content: space-between;
     padding: 0 20%;
-} 
+}
+.menu, .nav_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .nav_header {
     gap: 2em;
     z-index: 2;
@@ -53,12 +51,14 @@ body {
     padding: 5px;
     border-radius: 6px;
 }
-.conteudo {
-    background-color: var(--Fundo);
-    text-align: center;
-    padding-top: 6em;
-    height: 100vw;
-    transition: 1s;/* Transition usada para desfocar conteudo ao clicar no menu Lat*/
+
+.cont_links{
+    display: grid;
+    
+    background-color: rgb(63, 47, 201);
+    margin: 0 auto;
+   
+
 }
 .nav_header a:hover{
     color: var(--Paleta01);
@@ -71,10 +71,18 @@ body {
     color: var(--Escrita);
     cursor: pointer;
 }
+section h1 {
+    text-align: center;
+    font-family: var(--fonte1);
+    padding: 20px;
+}
 footer {
+    font-family: var(--fonte1);
+    font-size: 0.9em;
     background-color: var(--Fundo);
     display: block;
     text-align: center;
+    color: var(--Escrita);
    
 }
 @media screen and (max-width: 768px) {
